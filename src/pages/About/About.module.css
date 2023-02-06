@@ -54,7 +54,7 @@ h4 {
 .About__container:hover {
   animation-name: bounce;
   animation-timing-function: ease;
-  color: #688e6f;
+  color: #77a580;
   box-shadow: 0 15px 25px #e9e9e926, 0 5;
 }
 
