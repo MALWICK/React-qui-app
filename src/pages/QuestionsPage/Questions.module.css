@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.questions {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #efebeb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.questions__content {
+  width: 60%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #efebeb;
+  background-color: #042e39;
+}
+
+.btnholder {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+}
+
+.truebtn button {
+  width: 150px;
+  height: 50px;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 18px;
+  border: 1px solid #c4bebe;
+  background-color: #1f232b85;
+  color: #fff;
+}
+
+.truebtn button:hover {
+  background-color: white;
+  color: black;
+  transition: 2s;
+}
+
+.falsebtn button {
+  width: 150px;
+  height: 50px;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 18px;
+  border: 1px solid #c4bebe;
+  background-color: #1f232b85;
+  color: #fff;
+}
+
+.falsebtn button:hover {
+  background-color: white;
+  color: black;
+  transition: 2s;
+}
+
+.see__results button{
+  width: 150px;
+  height: 55px;
+  font-size: large;
+  font-weight: 500;
+  padding: 1%;
+  border-radius: 3px;
+  margin-top: 8%;
+  background-color: #672d0edf;
+  color: #fff;
+}

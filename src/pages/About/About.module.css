@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.About {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00001af9;
+}
+
+.About__container {
+  width: 35%;
+  min-width: 325px;
+  height: 80%;
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  line-height: 1.4;
+  font-size: 2rem;
+  font-weight: 300;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 10px 150px 104px;
+  box-shadow: 0 15px 25px #f5f2f226, 0 5px 10px #fcfbfb0d;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.About__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e2619f;
+  letter-spacing: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+.About__container:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+  color: #688e6f;
+  box-shadow: 0 15px 25px #e9e9e926, 0 5;
+}
+
+.nxtbtn {
+  background-color: #f8f6f5c3;
+  width: 140px;
+  height: 50px;
+  font-size: large;
+  border: 1px solid grey;
+  border-radius: 7px;
+}
+
+.nxtbtn:hover {
+  background-color: #000000c3;
+  color: white;
+  transition: 2s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .About__container {
+    width: 80%;
+    height: 94vh;
+  }
+}
