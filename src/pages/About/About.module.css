@@ -14,9 +14,10 @@
 }
 
 .About__container {
-  width: 35%;
+  width: 55%;
   min-width: 325px;
   height: 80%;
+  text-align: center;
   min-height: 450px;
   display: flex;
   justify-content: center;
@@ -26,9 +27,7 @@
   line-height: 1.4;
   font-size: 2rem;
   font-weight: 300;
-  padding-left: 3px;
-  padding-right: 3px;
-  border-radius: 10px 150px 104px;
+  border-radius: 30px;
   box-shadow: 0 15px 25px #f5f2f226, 0 5px 10px #fcfbfb0d;
 }
 
@@ -51,12 +50,6 @@ h4 {
   animation-fill-mode: forwards;
 }
 
-.About__container:hover {
-  animation-name: bounce;
-  animation-timing-function: ease;
-  color: #77a580;
-  box-shadow: 0 15px 25px #e9e9e926, 0 5;
-}
 
 .nxtbtn {
   background-color: #f8f6f5c3;

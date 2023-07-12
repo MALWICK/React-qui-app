@@ -31,7 +31,7 @@
 }
 
 .questions__content {
-  width: 60%;
+  width: 50%;
   height: 45vh;
   display: flex;
   flex-direction: column;
@@ -98,3 +98,30 @@
   background-color: #672d0edf;
   color: #fff;
 }
+
+@media (max-width: 768px){
+  
+.questions__content {
+  width: 80%;
+  height: fit-content;
+  padding: 2%;
+}
+}
+
+@media (max-width: 768px){
+  
+  .questions__content {
+    width: 90%;
+    height: fit-content;
+    padding: 2%;
+  }
+
+
+.truebtn button {
+  width: 120px;
+}
+
+.falsebtn button {
+  width: 120px;
+}
+  }

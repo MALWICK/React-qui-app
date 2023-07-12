@@ -12,7 +12,6 @@ function Results() {
       <div className={Styles.resultsnum}>
         <p>passed: {ansTracker.passed}</p>
         <p>failed: {ansTracker.failed}</p>
-        <p>skipped: {ansTracker.skipped}</p>
       </div>
       <div className={Styles.result__container}>
         {quiz.map((user) => (
@@ -29,7 +28,7 @@ function Results() {
               className={Styles.back}
               type="button"
               onClick={() => {
-                setAnswerTracker({ passed: 0, failed: 0, skipped: 0 });
+                setAnswerTracker({ passed: 0, failed: 0 });
               }}
             >
               back to About
