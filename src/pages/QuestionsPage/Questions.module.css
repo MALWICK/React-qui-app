@@ -8,14 +8,14 @@
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
+  color: white;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #efebeb;
+  background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-overflow-scrolling: touch;
@@ -29,19 +29,40 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.questions h1 {
+  margin-bottom: 2%;
+  font-size: 3rem;
+}
 
 .questions__content {
-  width: 50%;
-  height: 45vh;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 2;
   font-size: 1.9rem;
   font-weight: 500;
-  color: #efebeb;
-  background-color: #042e39;
+  color: black;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.5rem;
+}
+
+.questions__numbers {
+  width: 80%;
+  margin-top: 1.4%;
+  margin-bottom: 1.2%;
+}
+
+.questions__numbers span {
+  padding-left: 8px;
+}
+
+.ques {
+  width: 85%;
+  background-color: #e0fafa;
+  text-align: left;
+  padding: 1.4%;
 }
 
 .btnholder {
@@ -55,18 +76,19 @@
 
 .truebtn button {
   width: 150px;
-  height: 50px;
   font-size: large;
   font-weight: 500;
-  border-radius: 18px;
+  border-radius: 0.8rem;
   border: 1px solid #c4bebe;
-  background-color: #1f232b85;
+  background-color: #2b70d8;
   color: #fff;
+  padding: 11%;
+  cursor: pointer;
 }
 
 .truebtn button:hover {
-  background-color: white;
-  color: black;
+  background-color: #0a377a;
+  color: white;
   transition: 2s;
 }
 
@@ -75,19 +97,21 @@
   height: 50px;
   font-size: large;
   font-weight: 500;
-  border-radius: 18px;
+  border-radius: 0.8rem;
   border: 1px solid #c4bebe;
-  background-color: #1f232b85;
+  background-color: #7c1010;
   color: #fff;
+  padding: 11%;
+  cursor: pointer;
 }
 
 .falsebtn button:hover {
-  background-color: white;
-  color: black;
+  background-color: #4b0b0b;
+  color: #fff;
   transition: 2s;
 }
 
-.see__results button{
+.see__results button {
   width: 150px;
   height: 55px;
   font-size: large;
@@ -99,29 +123,26 @@
   color: #fff;
 }
 
-@media (max-width: 768px){
-  
-.questions__content {
-  width: 80%;
-  height: fit-content;
-  padding: 2%;
-}
+@media (max-width: 768px) {
+  .questions__content {
+    width: 80%;
+    height: fit-content;
+    padding: 2%;
+  }
 }
 
-@media (max-width: 768px){
-  
+@media (max-width: 768px) {
   .questions__content {
     width: 90%;
     height: fit-content;
     padding: 2%;
   }
 
-
-.truebtn button {
-  width: 120px;
-}
-
-.falsebtn button {
-  width: 120px;
-}
+  .truebtn button {
+    width: 120px;
   }
+
+  .falsebtn button {
+    width: 120px;
+  }
+}

@@ -15,11 +15,15 @@ function Questions() {
           <h1>Questions</h1>
           <div className={Styles.questions__content}>
             <div className={Styles.questions__numbers}>
-              <h4>Question number:{id}</h4>
+              <h4>
+                Question number:<span>{id} </span>
+              </h4>
             </div>
-            <p key={quiz.question}>
-              {quiz[changeId].question.replace(/[^a-zA-Z0-9 ]/g, '')}
-            </p>
+            <div className={Styles.ques}>
+              <p key={quiz.question}>
+                {quiz[changeId].question.replace(/[^a-zA-Z0-9 ]/g, '')}
+              </p>
+            </div>
             <section className={Styles.btnholder}>
               <div className={Styles.truebtn}>
                 <Link

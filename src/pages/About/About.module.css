@@ -10,13 +10,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00001af9;
+  background-color: black;
 }
 
 .About__container {
-  width: 55%;
+  width: 40%;
   min-width: 325px;
-  height: 80%;
   text-align: center;
   min-height: 450px;
   display: flex;
@@ -25,10 +24,9 @@
   flex-direction: column;
   background-color: white;
   line-height: 1.4;
-  font-size: 2rem;
   font-weight: 300;
-  border-radius: 30px;
   box-shadow: 0 15px 25px #f5f2f226, 0 5px 10px #fcfbfb0d;
+  padding: 1%;
 }
 
 h4 {
@@ -37,9 +35,8 @@ h4 {
 }
 
 .About__title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
-  color: #e2619f;
   letter-spacing: 1px;
   overflow: hidden;
   white-space: nowrap;
@@ -50,6 +47,35 @@ h4 {
   animation-fill-mode: forwards;
 }
 
+.gen {
+  width: 87%;
+  text-align: left;
+  margin-top: 1.2%;
+  margin-bottom: 1.2%;
+  border: 1px solid grey;
+  padding: 1.3%;
+  border-radius: 0.5rem;
+}
+
+.stpe {
+  width: 87%;
+  text-align: left;
+  margin-top: 1.2%;
+  margin-bottom: 1.2%;
+  border: 1px solid grey;
+  padding: 1.3%;
+  border-radius: 0.5rem;
+}
+
+.ins {
+  width: 87%;
+  text-align: left;
+  margin-top: 1.2%;
+  margin-bottom: 1.2%;
+  border-radius: 0.5rem;
+  border: 1px solid grey;
+  padding: 1.3%;
+}
 
 .nxtbtn {
   background-color: #f8f6f5c3;
@@ -58,10 +84,12 @@ h4 {
   font-size: large;
   border: 1px solid grey;
   border-radius: 7px;
+  cursor: pointer;
+  margin-top: 0.9%;
 }
 
 .nxtbtn:hover {
-  background-color: #000000c3;
+  background-color: black;
   color: white;
   transition: 2s;
 }
