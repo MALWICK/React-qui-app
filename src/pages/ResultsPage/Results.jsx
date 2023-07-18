@@ -17,8 +17,8 @@ function Results() {
         {quiz.map((user) => (
           <div className={Styles.result__content}>
             <div className={Styles.questions__results}>
-              .{user.question.replace(/[^a-zA-Z0-9 ]/g, '')}
-              <p className={Styles.correctan}>:{user.correct_answer}</p>
+              <p> .{user.question.replace(/[^a-zA-Z0-9 ]/g, '')}</p>
+              <p className={Styles.correctan}>Answer:{user.correct_answer}</p>
             </div>
           </div>
         ))}
