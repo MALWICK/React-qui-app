@@ -31,7 +31,7 @@ function Results() {
                 setAnswerTracker({ passed: 0, failed: 0 });
               }}
             >
-              back to About
+              Exit
             </button>
           </Link>
         </div>

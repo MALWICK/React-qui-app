@@ -6,7 +6,6 @@
 
 .results {
   width: 100%;
-  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +31,6 @@
 .result__container {
   width: 67%;
   padding: 1%;
-  max-height: 1000px;
   margin-top: 1%;
 }
 
@@ -86,7 +84,42 @@
   .results {
     display: block;
     text-align: center;
-    height: 170vh;
+    height: fit-content;
+  }
+
+  .resultsnum {
+    width: 100%;
+    margin-top: 9%;
+  }
+
+  .result__container {
+    width: 99%;
+  }
+
+  .result__content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .results {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .result__container {
+    width: 99%;
+  }
+
+  .result__content {
+    width: 100%;
+  }
+
+  .questions__results {
+    flex-direction: column;
   }
 }
 
@@ -94,7 +127,6 @@
   .results {
     display: block;
     text-align: center;
-    height: 415vh;
   }
 
   .resultsnum {
