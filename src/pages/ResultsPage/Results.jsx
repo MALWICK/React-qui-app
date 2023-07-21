@@ -12,14 +12,13 @@ function Results() {
       <div className={Styles.resultsnum}>
         <p>passed: {ansTracker.passed}</p>
         <p>failed: {ansTracker.failed}</p>
-        <p>skipped: {ansTracker.skipped}</p>
       </div>
       <div className={Styles.result__container}>
         {quiz.map((user) => (
           <div className={Styles.result__content}>
             <div className={Styles.questions__results}>
-              .{user.question.replace(/[^a-zA-Z0-9 ]/g, '')}
-              <p className={Styles.correctan}>:{user.correct_answer}</p>
+              <p> .{user.question.replace(/[^a-zA-Z0-9 ]/g, '')}</p>
+              <p className={Styles.correctan}>Answer:{user.correct_answer}</p>
             </div>
           </div>
         ))}
@@ -29,10 +28,10 @@ function Results() {
               className={Styles.back}
               type="button"
               onClick={() => {
-                setAnswerTracker({ passed: 0, failed: 0, skipped: 0 });
+                setAnswerTracker({ passed: 0, failed: 0 });
               }}
             >
-              back to About
+              Exit
             </button>
           </Link>
         </div>

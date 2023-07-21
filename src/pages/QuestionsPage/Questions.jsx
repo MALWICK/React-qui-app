@@ -12,14 +12,18 @@ function Questions() {
     <div>
       {quiz.length > 0 && ( // here we are actually saying that we are fetching all the questions with the state quiz and its value by defualt is 0, so we saying that if the array length of questions is greather than 0 it show display the lenght of the array
         <div className={Styles.questions}>
-          <h1>questions</h1>
+          <h1>Questions</h1>
           <div className={Styles.questions__content}>
             <div className={Styles.questions__numbers}>
-              <h4>Questions number:{id}</h4>
+              <h4>
+                Question number:<span>{id} </span>
+              </h4>
             </div>
-            <p key={quiz.question}>
-              {quiz[changeId].question.replace(/[^a-zA-Z0-9 ]/g, '')}
-            </p>
+            <div className={Styles.ques}>
+              <p key={quiz.question}>
+                {quiz[changeId].question.replace(/[^a-zA-Z0-9 ]/g, '')}
+              </p>
+            </div>
             <section className={Styles.btnholder}>
               <div className={Styles.truebtn}>
                 <Link
@@ -59,11 +63,6 @@ function Questions() {
                 </Link>
               </div>
             </section>
-          </div>
-          <div className={Styles.see__results}>
-            <Link to="/results">
-              <button type="button">see results</button>
-            </Link>
           </div>
         </div>
       )}
